@@ -1,0 +1,41 @@
+.button-solid {
+  display: inline-block;
+  padding: 20.5px 39px;
+
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  cursor: pointer;
+
+  font-weight: 800;
+  font-size: 14px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+
+  color: #2e2e2e;
+
+  transition: background-color 0.1s ease-in;
+}
+
+.button-solid:hover {
+  background-color: rgba(0, 0, 0, 0.75);
+  border-color: #000;
+
+  color: #fff;
+}
+
+.button-solid:focus {
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.75);
+  border-color: #000;
+
+  color: #fff;
+}
+
+.button-solid:active {
+  background-color: rgba(0, 0, 0, 0.9);
+  border-color: #000;
+
+  position: relative;
+  top: 1.5px;
+}

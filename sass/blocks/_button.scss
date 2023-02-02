@@ -1,0 +1,48 @@
+.button {
+  display: inline-block;
+
+  width: 246px;
+  height: 60px;
+
+  background: #00c470;
+  border-radius: 30px;
+  border: 1px solid #00c470;
+  cursor: pointer;
+
+  font-weight: 800;
+  font-size: 14px;
+  letter-spacing: 4px;
+  line-height: 60px;
+  text-transform: uppercase;
+  text-align: center;
+
+  color: #fff;
+
+  transition: background-color 0.1s ease-in;
+
+  /* Mobile */
+  @media (max-width: 899px) {
+    width: 370px;
+  }
+
+  /* Mobile XS */
+  @media (max-width: 599px) {
+    width: 290px;
+  }
+}
+
+.button:hover {
+  background: #00d378;
+}
+
+.button:focus {
+  outline: none;
+  border: 1px solid #fff;
+}
+
+.button:active {
+  background: #00b667;
+
+  position: relative;
+  top: 1.5px;
+}

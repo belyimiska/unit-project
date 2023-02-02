@@ -1,0 +1,35 @@
+.button-outline {
+  display: inline-block;
+  padding: 20.5px 39px;
+
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
+  cursor: pointer;
+
+  font-weight: 800;
+  font-size: 14px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+
+  color: #ffffff;
+
+  transition: background-color 0.1s ease-in;
+}
+
+.button-outline:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0);
+}
+
+.button-outline:focus {
+  outline: none;
+  background-color: rgb(0, 0, 0);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.button-outline:active {
+  background-color: rgba(255, 255, 255, 0.2);
+  position: relative;
+  top: 1.5px;
+}

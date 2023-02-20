@@ -13,3 +13,13 @@ navLinks.forEach((link) => {
     navIcon.classList.remove("nav-icon--active");
   });
 });
+
+const searchForm = document.querySelector(".search");
+const searchBtn = document.querySelector(".search__button");
+
+searchBtn.addEventListener("click", function (e) {
+  if (!searchForm.classList.contains("search--visible")) {
+    e.preventDefault();
+    searchForm.classList.toggle("search--visible");
+  }
+});

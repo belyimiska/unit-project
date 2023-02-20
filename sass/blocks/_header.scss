@@ -86,6 +86,10 @@
   margin-left: auto;
 }
 
+.header__btns-nav-icon {
+  flex-shrink: 0;
+}
+
 .header__content {
   margin-bottom: 148px;
   text-align: center;

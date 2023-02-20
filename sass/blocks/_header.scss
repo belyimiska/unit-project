@@ -1,5 +1,6 @@
 .header {
   position: relative;
+  z-index: 10;
 
   background-image: url("../img/bg/header-bg.jpg");
   background-size: cover;
@@ -79,6 +80,10 @@
   @media (max-width: 899px) {
     margin-bottom: 30px;
   }
+}
+
+.header__btns-search {
+  margin-left: auto;
 }
 
 .header__content {

@@ -26,11 +26,23 @@
     <header class="header">
       <div class="header__wrapper">
         <div class="header__btns">
-          <button class="button-round">
-            <img src="./img/header/nav.svg" alt="nav" />
+          <button class="nav-icon">
+            <div class="nav-icon__middle"></div>
           </button>
 
-          <button class="button-round">
+          <nav class="nav">
+            <h2 class="nav__top">навигация по сайту</h2>
+
+            <ul class="nav__list">
+              <li><a href="#functional">Функционал</a></li>
+              <li><a href="#tasks">Гибкое управление</a></li>
+              <li><a href="#focus">Всегда в фокусе</a></li>
+              <li><a href="#price">Цены</a></li>
+              <li><a href="#clients">Отзывы клиентов</a></li>
+            </ul>
+          </nav>
+
+          <button class="header__btns-search button-round">
             <img src="./img/header/search.svg" alt="search" />
           </button>
         </div>
@@ -141,7 +153,7 @@
         </div>
       </section>
 
-      <section class="section-tasks">
+      <section class="section-tasks" id="tasks">
         <div class="container">
           <div class="section-tasks__row">
             <div class="section-tasks__content">
@@ -173,7 +185,7 @@
         </div>
       </section>
 
-      <section class="section-focus">
+      <section class="section-focus" id="focus">
         <div class="container">
           <div class="section-focus__row">
             <div class="section-focus__img">
@@ -204,7 +216,7 @@
         </div>
       </section>
 
-      <section class="section-price">
+      <section class="section-price" id="price">
         <div class="section-price__content">
           <div class="container">
             <div class="section-price__header">
@@ -282,7 +294,7 @@
         </div>
       </section>
 
-      <section class="section-clients">
+      <section class="section-clients" id="clients">
         <div class="container">
           <div class="section-clients__header">
             <div class="section-clients__title">
@@ -372,5 +384,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/main.js"></script>
   </body>
 </html>

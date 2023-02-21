@@ -21,6 +21,10 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;800&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="./libs/owl-carusel/assets/owl.carousel.min.css"
+    />
   </head>
   <body>
     <header class="header">
@@ -343,40 +347,116 @@
 
           <div class="section-clients__slider">
             <div class="slider">
-              <button class="slider__arrow slider__arrow--left">
-                <img src="./img/feather-icon/arrow-left.svg" alt="left" />
+              <button class="slider__arrow slider__arrow--left" id="sliderPrev">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g class="slider__arrow-svg">
+                    <path
+                      d="M20 12H4"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M10 18L4 12L10 6"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </g>
+                </svg>
+              </button>
+              <button
+                class="slider__arrow slider__arrow--right"
+                id="sliderNext"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g class="slider__arrow-svg">
+                    <path
+                      d="M4 12H20"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M14 6L20 12L14 18"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </g>
+                </svg>
               </button>
 
-              <button class="slider__arrow slider__arrow--right">
-                <img src="./img/feather-icon/arrow-right.svg" alt="right" />
-              </button>
-
-              <div class="slider__pagination">
-                <button class="slider__pagination-item"></button>
-                <button
-                  class="slider__pagination-item slider__pagination-item--active"
-                ></button>
-                <button class="slider__pagination-item"></button>
-                <button class="slider__pagination-item"></button>
-                <button class="slider__pagination-item"></button>
-              </div>
-
-              <div class="slider-item">
-                <div class="slider-item__text">
-                  <p>
-                    Это потрясающее приложение, которое помогло мне завершить
-                    все мои дела, и сделать дипломный проект раньше срока.
-                  </p>
-                </div>
-
-                <div class="slider-item__author">
-                  <div class="slider-item__avatar">
-                    <img src="./img/users/user-foto.jpg" alt="user-foto" />
+              <div class="slider owl-carousel owl-theme" id="clients-slider">
+                <div class="slider-item">
+                  <div class="slider-item__text">
+                    <p>
+                      Это потрясающее приложение, которое помогло мне завершить
+                      все мои дела, и сделать дипломный проект раньше срока.
+                    </p>
                   </div>
 
-                  <div class="slider-item__user-info">
-                    <span class="slider-item__prof">Фрилансер</span>
-                    <span class="slider-item__name">Николай Остапов</span>
+                  <div class="slider-item__author">
+                    <div class="slider-item__avatar">
+                      <img src="./img/users/user-foto.jpg" alt="user-foto" />
+                    </div>
+
+                    <div class="slider-item__user-info">
+                      <span class="slider-item__prof">Фрилансер</span>
+                      <span class="slider-item__name">Николай Остапов</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="slider-item">
+                  <div class="slider-item__text">
+                    <p>
+                      Это потрясающее приложение, которое помогло мне завершить
+                      все мои дела, и сделать дипломный проект раньше срока.
+                    </p>
+                  </div>
+
+                  <div class="slider-item__author">
+                    <div class="slider-item__avatar">
+                      <img src="./img/users/user-foto.jpg" alt="user-foto" />
+                    </div>
+
+                    <div class="slider-item__user-info">
+                      <span class="slider-item__prof">Фрилансер</span>
+                      <span class="slider-item__name">Николай Остапов</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="slider-item">
+                  <div class="slider-item__text">
+                    <p>
+                      Это потрясающее приложение, которое помогло мне завершить
+                      все мои дела, и сделать дипломный проект раньше срока.
+                    </p>
+                  </div>
+
+                  <div class="slider-item__author">
+                    <div class="slider-item__avatar">
+                      <img src="./img/users/user-foto.jpg" alt="user-foto" />
+                    </div>
+
+                    <div class="slider-item__user-info">
+                      <span class="slider-item__prof">Фрилансер</span>
+                      <span class="slider-item__name">Николай Остапов</span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -420,6 +500,10 @@
       </div>
     </footer>
 
+    <script src="./libs/jquery-3.6.0.min.js"></script>
+    <script src="./libs/owl-carusel/owl.carousel.min.js"></script>
+
     <script src="./js/main.js"></script>
+    <script src="./js/clients-carousel.js"></script>
   </body>
 </html>

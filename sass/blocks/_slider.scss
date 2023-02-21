@@ -18,9 +18,24 @@
 
   border-radius: 50%;
   border: none;
-  background: #f5f5f5;
+  background-color: #f5f5f5;
 
   cursor: pointer;
+  transition: background-color 0.15s ease-in;
+
+  .slider__arrow-svg {
+    stroke: #00c470;
+
+    transition: stroke 0.15s ease-in;
+  }
+
+  &:hover {
+    background-color: #00c470;
+
+    .slider__arrow-svg {
+      stroke: #fff;
+    }
+  }
 
   /* Mobile XS */
   @media (max-width: 599px) {
